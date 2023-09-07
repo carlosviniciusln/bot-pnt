@@ -4169,11 +4169,17 @@ header .offcanvas-backdrop {
 }
 .main-wrapper .main-section {
   padding-top: calc(80px + 100 * (100vw - 320px) / 1600);
-  padding-bottom: calc(75px + 95 * (100vw - 320px) / 1600);
+  padding-bottom: 5px;
 }
 .main-wrapper .main-section .card {
   background-color: rgba(var(--content-color), 0.1);
   border-radius: 10px;
+}
+.ajs-teste{
+  background-color: rgba(var(--content-color), 0.1);
+  border-radius: 10px;
+  width: 666px;
+  margin-left: 26px;
 }
 @media (max-width: 767px) {
   .main-wrapper .main-section .card {

@@ -61,18 +61,17 @@
                                     data-icon="messages-2"></i>
                                 <span>Chat</span> </button>
                         </li>
-                        <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="History" class="nav-item"
-                            role="presentation">
-                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#history" type="button"
-                                role="tab" aria-controls="history" aria-selected="false"><i class="iconsax"
-                                    data-icon="refresh-circle"></i>
-                                <span>Histórico</span> </button>
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Periodização Automatizada"
+                            class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#subscription" type="button"
+                                role="tab" aria-controls="subscription" aria-selected="false"><i class="iconsax"
+                                    data-icon="crown-2"></i> <span>Periodização</span></button>
                         </li>
                         <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Settings" class="nav-item"
                             role="presentation">
                             <button class="nav-link" data-bs-toggle="tab" data-bs-target="#settings" type="button"
                                 role="tab" aria-controls="settings" aria-selected="false"><i class="iconsax"
-                                    data-icon="setting-1"></i><span>Configuração</span></button>
+                                    data-icon="setting-1"></i><span>Dados Pessoais</span></button>
                         </li>
                     </ul>
                 </div>
@@ -167,7 +166,8 @@
                             <span>personal</span></a>
                     </div>
                     <div class="main-section">
-                        <div class="container card p-0">
+                        <div class="ajs-teste">
+                   <div class="container card p-0">
                             <div class="card-header">
                                 <h3 class="text-white">Periodização Automatizada</h3>
                                 <form class="auth-form d-none d-md-block">
@@ -306,6 +306,8 @@
                             </div>
 
                         </div>
+                        </div>
+                     
                     </div>
                 </div>
             </div>
@@ -321,99 +323,122 @@
                             <a href="index.html" class="logo-icon d-flex d-md-none">
                                 <img src="assets/images/favicon.png" class="img-fluid">
                             </a>
-                            <h3>Subscription</h3>
+                            <h3>Periodização Automatizada</h3>
                         </div>
                         <a class="premium-btn" data-cursor="pointer" href=""><i class="iconsax" data-icon="crown-2"></i>
                            Fale com
                             <span>personal</span></a>
                     </div>
                     <div class="main-section">
-                        <div class="container card p-0">
-                            <div class="card-header">
-                                <h3 class="text-white">Choose Period of Plan :</h3>
-                                <div class="header-option d-none d-md-flex">
-                                    <label for="currency" class="form-label text-white">Currency :</label>
-                                    <select class="form-select" aria-label="Default select example" id="currency">
-                                        <option selected>Us Dollar</option>
-                                        <option value="1">Euro</option>
-                                        <option value="2">Yuan</option>
-                                    </select>
-                                </div>
-                            </div>
+                        <div class="container card p-0" style="margin-top: -55px;">
                             <div class="card-body px-sm-4 px-3">
                                 <div class="row justify-content-center">
-                                    <div class="col-xl-4 col-md-6 col-12">
+                                    <div class="col-xl-8 col-md-8 col-12">
                                         <div class="card inner-card">
                                             <div class="card-header">
                                                 <img src="assets/svg/pricing/weekly.svg" class="img-fluid" alt="">
-                                                <h4 class="text-white mb-0">Weekly Plan</h4>
+                                                <h4 class="text-white mb-0">Periodização Automatizada</h4>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-size: 10pt;">
+                                                    Recomendações
+                                                  </button>
                                             </div>
                                             <div class="card-body">
-                                                <h3>$3.99 only/-</h3>
-                                                <ul>
-                                                    <li>Intelligent AI chatbot</li>
-                                                    <li>Unlimited answer of question</li>
-                                                    <li>Avoid buying coin forever</li>
-                                                    <li>No ad in background</li>
-                                                    <li>Early access to new features</li>
-                                                </ul>
-                                                <button class="select-plan ">
-                                                    <i class="iconsax" data-icon="thick-arrow-right"></i>
-                                                    Select this plan
-                                                </button>
+                                                <table class="table table-responsive" style="color: white;">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Dia</td>
+                                                            <td>Exercício</td>
+                                                            <td>Série</td>
+                                                            <td>Repetição</td>
+                                                            <td>Peso</td>
+                                                            <td>Realizado?</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Segunda</td>
+                                                            <td>Supino reto</td>
+                                                            <td>4</td>
+                                                            <td>6</td>
+                                                            <td>20kg</td>
+                                                            <td><div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                              </div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Terça</td>
+                                                            <td style="font-size: 9pt;">Treinamento de Alta Intensidade Intervalado (HIIT) 30 segundos de agachamento e 10 segundos de descanso.</td>
+                                                            <td>6</td>
+                                                            <td>9</td>
+                                                            <td>-</td>
+                                                            <td><div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                              </div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Quarta</td>
+                                                            <td>Exercícios Plyométricos</td>
+                                                            <td>12</td>
+                                                            <td>4</td>
+                                                            <td>-</td>
+                                                            <td><div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                              </div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Quinta</td>
+                                                            <td>Caminhadas leve</td>
+                                                            <td>4</td>
+                                                            <td>6</td>
+                                                            <td>-</td>
+                                                            <td><div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                              </div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sexta</td>
+                                                            <td>Caminhadas leve</td>
+                                                            <td>4</td>
+                                                            <td>6</td>
+                                                            <td>-</td>
+                                                            <td><div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                              </div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-md-6 col-12">
+                                    <div class="col-xl-4 col-md-4 col-12">
                                         <div class="card inner-card">
                                             <div class="card-header">
-                                                <img src="assets/svg/pricing/monthly.svg" class="img-fluid" alt="">
-                                                <h4 class="text-white mb-0">Monthly Plan</h4>
+                                                <img src="assets/svg/dna-svgrepo-com.svg" class="img-fluid" alt="">
+                                                <h4 class="text-white mb-0">Mapeamento Genético</h4>
                                             </div>
-                                            <div class="card-body">
-                                                <h3>$3.99 only/-</h3>
-                                                <ul>
-                                                    <li>Intelligent AI chatbot</li>
-                                                    <li>Unlimited answer of question</li>
-                                                    <li>Avoid buying coin forever</li>
-                                                    <li>No ad in background</li>
-                                                    <li>Early access to new features</li>
-                                                </ul>
-                                                <button class="no-select-plan select-plan">
-                                                    <i class="iconsax" data-icon="thick-arrow-right"></i>
-                                                    Select this plan
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 col-12">
-                                        <div class="card inner-card">
-                                            <div class="card-header">
-                                                <img src="assets/svg/pricing/yearly.svg" class="img-fluid" alt="">
-                                                <h4 class="text-white mb-0">Lifetime Plan</h4>
-                                            </div>
-                                            <div class="card-body">
-                                                <h3>$3.99 only/-</h3>
-                                                <ul>
-                                                    <li>Intelligent AI chatbot</li>
-                                                    <li>Unlimited answer of question</li>
-                                                    <li>Avoid buying coin forever</li>
-                                                    <li>No ad in background</li>
-                                                    <li>Early access to new features</li>
-                                                </ul>
-                                                <button class="no-select-plan select-plan">
-                                                    <i class="iconsax" data-icon="thick-arrow-right"></i>
-                                                    Select this plan
-                                                </button>
+                                            <div class="card-body" style="height: 440px;">
+                                                <div class="col-xl-12 col-md-12 col-12" style="color: white;">
+                                                    <span style="font-weight: 700;">Nome:</span> José da Silva <br />
+                                                    <span style="font-weight: 700;">Idade:</span> 45 anos <br />
+                                                    <br />
+                                                    Data do exame: 10/09/2023<br />
+                                                    Fonte: Laboratório Sabin<br />
+                                                    <br />
+                                                    <span style="font-weight: 700;">Tipo Sanguíneo:</span> AB+ <br />
+                                                    <span style="font-weight: 700;">Tipo de Fibra:</span> Tipo II A (Brancas) <br />
+                                                    <span style="font-weight: 700;">Altura:</span> 1,75cm <br />
+                                                    <span style="font-weight: 700;">Peso:</span> 104kg <br />
+                                                    <span style="font-weight: 700;">Detalhes:</span> Obesidade e Diabetes
+                                                </div>
+                                                <div>
+                                                    <br>
+                                                    <br>
+                                                    <span style="color: white;">Forma física atual:</span>
+                                                    <img src="assets/images/user/shape1.png" class="img-fluid float-end" alt="" style="height: 130px;float: right;margin-top: -45px; position: absolute;">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="subscription-continue">
-                                    <button class="no-select-plan select-plan">Continue</button>
-                                    <a href="#" class="text-white">
-                                        Continue with limited version
-                                    </a>
                                 </div>
                             </div>
 
@@ -733,6 +758,34 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="container card p-0">
+                            <div class="card-header">
+                                <h3 class="text-white">Exame de Teste Genético</h3>
+                            </div>
+                            <div class="card-body px-sm-4 px-3">
+                                <div class="my-account">
+                                    <form class="msger-inputarea mb-0">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label style="color: white;">Faça o upload do seu exame realizado em laboratório:</label>
+                                                    <input type="file" class="msger-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="setting-btn">
+                                    <button class="select-plan ">Salvar senha
+                                    </button>
+                                    <button class="no-select-plan select-plan">
+                                        Cancelar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -776,6 +829,48 @@
     <div id="cursor-border"></div>
     <!--custom cursor start  -->
 
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width: 724px; margin-left: -100px;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Recomendações para o seu perfil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Dieta para Diabéticos com Treinamento Anaeróbico fibras do tipo II A branca <br>
+
+            É crucial manter os níveis de glicose no sangue estáveis com uma dieta adequada para diabéticos. Aqui está uma sugestão: <br>
+            
+            <b>* Café da Manhã:</b><br>
+              - Omelete de claras de ovo com espinafre e cogumelos.<br>
+              - Aveia integral.<br>
+            
+            <b>* Lanche da Manhã:</b><br>
+              - Um punhado de nozes.<br>
+            
+              <b>*Almoço:</b><br>
+              - Peito de frango grelhado com salada de vegetais de folhas verdes.<br>
+              - Quinoa ou arroz integral.<br>
+            
+            <b>* Lanche da Tarde:</b><br>
+              - Iogurte grego sem açúcar (ou alternativa sem açúcar).<br>
+              - Um punhado de cenoura e aipo.<br>
+            
+            <b>* Jantar:</b><br>
+              - Salmão assado com aspargos.<br>
+              - Couve-flor ou brócolis no vapor.<br>
+            
+            <b>* Lanche Noturno (opcional):</b><br>
+              - Um pequeno pedaço de queijo com baixo teor de gordura.<br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <!-- Bootstrap js-->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -786,6 +881,10 @@
 
     <!-- custom cursor -->
     <script src="assets/js/custom-cursor.js"></script>
+
+    <!-- aos animation -->
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom-aos.js"></script>
 
     <!-- iconsax js -->
     <script src="assets/js/iconsax.js"></script>
