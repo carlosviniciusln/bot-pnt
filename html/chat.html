@@ -422,6 +422,9 @@
                                                     <span style="font-weight: 700;">Idade:</span> 45 anos <br />
                                                     <br />
                                                     Data do exame: 10/09/2023<br />
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalExame" style="color: white; font-size: 10pt;">
+                                                        Ver exame
+                                                      </button>
                                                     Fonte: Laboratório Sabin<br />
                                                     <br />
                                                     <span style="font-weight: 700;">Tipo Sanguíneo:</span> AB+ <br />
@@ -863,6 +866,23 @@
             
             <b>* Lanche Noturno (opcional):</b><br>
               - Um pequeno pedaço de queijo com baixo teor de gordura.<br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalExame" tabindex="-1" aria-labelledby="exampleModalExameLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width: 724px; margin-left: -100px;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalExameLabel">Resultado do exame do laboratório</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/exame.jpg">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
