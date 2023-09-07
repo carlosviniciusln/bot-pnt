@@ -326,11 +326,11 @@
                             </a>
                             <h3>Periodização Automatizada</h3>
                         </div>
-                        <a class="premium-btn" data-cursor="pointer" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="iconsax" data-icon="crown-2"></i>
-                           Fale com <span>nosso time</span>
+                        <a id="btn-exame" class="premium-btn" onclick="openLoading()"><i class="iconsax" data-icon="crown-2"></i>
+                            Faça o upload do seu <span>exame</span>
                         </a>
                     </div>
-                    <div class="main-section">
+                    <div id="oculta-periodizacao-automatizada" class="main-section" style="display: none;">
                         <div class="container card p-0" style="margin-top: -55px;">
                             <div class="card-body px-sm-4 px-3">
                                 <div class="row justify-content-center">
@@ -339,6 +339,9 @@
                                             <div class="card-header">
                                                 <img src="assets/svg/pricing/weekly.svg" class="img-fluid" alt="">
                                                 <h4 class="text-white mb-0">Periodização Automatizada</h4>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-size: 10pt;">
+                                                    Falar com especialistas
+                                                  </button>
                                             </div>
                                             <div class="card-body">
                                                 <table class="table table-responsive" style="color: white;">
@@ -432,7 +435,7 @@
                                         <div class="card inner-card">
                                             <div class="card-header">
                                                 <img src="assets/svg/dna-svgrepo-com.svg" class="img-fluid" alt="">
-                                                <h4 class="text-white mb-0">Mapeamento Genético</h4>
+                                                <h4 class="text-white mb-0">Fator Genético</h4>
                                             </div>
                                             <div class="card-body" style="height: 440px;">
                                                 <div class="col-xl-12 col-md-12 col-12" style="color: white;">
@@ -927,6 +930,37 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+function openLoading(){
+    let timerInterval
+Swal.fire({
+  title: 'Criando a sua periodização automatizada...',
+  timer: 5000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    showDiv()
+  }
+})
+}
+
+function showDiv() {
+   document.getElementById('oculta-periodizacao-automatizada').style.display = "block";
+}
+</script>
 
     <!-- Bootstrap js-->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
