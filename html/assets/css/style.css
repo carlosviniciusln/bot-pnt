@@ -4030,7 +4030,7 @@ header .offcanvas-backdrop {
 }
 @media (max-width: 767px) {
   .main-wrapper .fixed-header .premium-btn {
-    display: none;
+    display: block
   }
 }
 .main-wrapper .fixed-header .premium-btn span {
